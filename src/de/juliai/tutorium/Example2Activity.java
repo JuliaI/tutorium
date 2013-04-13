@@ -14,6 +14,9 @@ public class Example2Activity extends Activity {
 	 */
 	@Override
 	protected void onCreate(final Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.main2);
+
 		final TextView textView = (TextView) findViewById(R.id.textView1);
 		final String textcontent = getIntent().getStringExtra("textcontent");
 		textView.setText(textcontent);
