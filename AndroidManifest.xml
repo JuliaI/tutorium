@@ -33,6 +33,11 @@
             android:name="de.juliai.tutorium.MainActivity"
             android:label="@string/title_activity_main" >
         </activity>
+        
+        <activity
+            android:name="de.juliai.tutorium.ToDoListActivity"
+            android:label="@string/title_activity_todolist" >
+        </activity>
     </application>
 
 </manifest>

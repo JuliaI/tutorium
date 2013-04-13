@@ -47,7 +47,7 @@ public class Example1Activity extends Activity {
 			}
 		});
 
-		// new button for settings-example
+		// button for settings-example
 		final Button button2 = (Button) findViewById(R.id.button2);
 
 		button2.setOnClickListener(new OnClickListener() {
@@ -55,6 +55,18 @@ public class Example1Activity extends Activity {
 			public void onClick(View v) {
 				final Intent intent = new Intent(Example1Activity.this,
 						MainActivity.class);
+				startActivity(intent);
+			}
+		});
+		
+		// button for todo-list-example
+		final Button button3 = (Button) findViewById(R.id.button3);
+
+		button3.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				final Intent intent = new Intent(Example1Activity.this,
+						ToDoListActivity.class);
 				startActivity(intent);
 			}
 		});
