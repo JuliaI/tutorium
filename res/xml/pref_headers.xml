@@ -11,5 +11,8 @@
     <header
         android:fragment="de.juliai.tutorium.SettingsActivity$DataSyncPreferenceFragment"
         android:title="@string/pref_header_data_sync" />
+    <header
+        android:fragment="de.juliai.tutorium.SettingsActivity$MyPreferenceFragment"
+        android:title="@string/pref_header_preferencescreen1" />
 
 </preference-headers>

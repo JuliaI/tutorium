@@ -257,4 +257,17 @@ public class SettingsActivity extends PreferenceActivity {
 			bindPreferenceSummaryToValue(findPreference("sync_frequency"));
 		}
 	}
+
+	/**
+	 * This fragment shows my preferences only. It is used when the activity is
+	 * showing a two-pane settings UI.
+	 */
+	@TargetApi(Build.VERSION_CODES.HONEYCOMB)
+	public static class MyPreferenceFragment extends PreferenceFragment {
+		@Override
+		public void onCreate(Bundle savedInstanceState) {
+			super.onCreate(savedInstanceState);
+			addPreferencesFromResource(R.xml.preferencescreen1);
+		}
+	}
 }
