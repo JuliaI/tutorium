@@ -26,11 +26,11 @@ public class Example1Activity extends Activity {
 		Log.i(this.getClass().getName(), "onCreate");
 
 		// get elements
-		final Button button = (Button) findViewById(R.id.button1);
+		final Button button1 = (Button) findViewById(R.id.button1);
 		final EditText editText = (EditText) findViewById(R.id.editText1);
 
 		// on-click-event
-		button.setOnClickListener(new OnClickListener() {
+		button1.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				// show entered text in toast
@@ -43,6 +43,18 @@ public class Example1Activity extends Activity {
 				final Intent intent = new Intent(Example1Activity.this,
 						Example2Activity.class);
 				intent.putExtra("textcontent", editText.getText().toString());
+				startActivity(intent);
+			}
+		});
+
+		// new button for settings-example
+		final Button button2 = (Button) findViewById(R.id.button2);
+
+		button2.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				final Intent intent = new Intent(Example1Activity.this,
+						MainActivity.class);
 				startActivity(intent);
 			}
 		});
