@@ -68,7 +68,7 @@ public final class R {
         /**  Example settings for Notifications 
          */
         public static final int pref_header_notifications=0x7f060015;
-        /**  Example settings for My Preferences 
+        /**  Settings for My Preferences 
          */
         public static final int pref_header_preferencescreen1=0x7f06001a;
         public static final int pref_ringtone_silent=0x7f060018;

@@ -63,4 +63,12 @@ public class MainActivity extends Activity {
 		}
 	}
 
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	protected void onResume() {
+		super.onResume();
+		showBool();
+	}
 }
