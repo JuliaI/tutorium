@@ -17,6 +17,7 @@ public class Example2Activity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main2);
 
+		// show sent text from other activity
 		final TextView textView = (TextView) findViewById(R.id.textView1);
 		final String textcontent = getIntent().getStringExtra("textcontent");
 		textView.setText(textcontent);
