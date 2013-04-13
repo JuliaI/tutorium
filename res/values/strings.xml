@@ -2,5 +2,6 @@
 
     <string name="app_name">tutorium</string>
     <string name="hello_world">Hello World!</string>
+    <string name="button_show">Show</string>
 
 </resources>
